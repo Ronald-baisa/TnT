@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function testVariable() {
+            var strText = document.getElementById("textone").value;          
+            var strText1 = document.getElementById("textTWO").value;
+            var result = strText + ' ' + strText1;
+            document.getElementById('spanResult').textContent = result;
+        }
+    </script>
+</head>
+<style>
+body {
+  background: gray;
+}
+.box1 {
+  border: 2px solid green;
+  height: 100px;
+  width: 900px;
+  position: relative;
+  top: 700px;
+  font-size: 50px;
+  font-family: "Times New Roman";
+  text-align: center;
+}
+.box2 {
+  border: 2px solid green;
+  height: 100px;
+  width: 900px;
+  position: relative;
+  top: 750px;
+  font-size: 50px;
+  font-family: "Times New Roman";
+  text-align: center;
+}
+.btn {
+    border: 2px solid green;
+  height: 100px;
+  width: 300px;
+  position: relative;
+  top: 850px;
+  font-family: "Times New Roman";
+  font-size: 50px;
+  text-align: center;
+}
+.reset {
+  border: 2px solid red;
+  font-size: 80px;  
+  position: relative;
+  top: 860px;
+  left: 20px;
+  font-family: "Times New Roman";
+  text-align: center;
+  text-decoration: none;
+  background-color: red;
+  color: #fff;
+}
+.p1 {
+  background-color: lightblue;
+  width: 900px;
+  height: 400px;
+  font-family: "Times New Roman";
+  position: relative;
+  top: -200px;
+}
+.span-text {
+  color: green;
+  font-family: "Times New Roman";
+  font-size: 50px;
+  position: relative;
+  top: -450px;
+}
+</style>
+<body> 
+
+    <center><input class="box1" type="text" id="textone" placeholder="FIRSTNAME"required="type"/><br>
+    <input class="box2" type="text" id="textTWO" placeholder="LASTNAME" required/><br>
+    <button class="btn" onclick="testVariable()">Submit</button>
+       <a href="tab.html" class="reset" <button >Reset</button></a>
+     <br />
+     <p class="p1"></p>
+     <span class="span-text" id="spanResult">Your Name Is ?</span></center>
+   
+
+
+</body>
+</html>
